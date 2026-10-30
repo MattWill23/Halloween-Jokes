@@ -9,6 +9,55 @@ body {
 
 }
 
-.jokeBtn {
+#jokeBtn {
+  position: relative;
+  display: block;
+  background: transparent;
+  border: none;
+  padding: 200px 0 0;
+  margin: 0 auto;
+  width: 750px;
+}
 
+#ghost {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 750px;
+  left: 0px;
+  transition: transform 400ms ease-in-out;
+}
+
+#ghost:hover {
+  transform: translateY(-16px);
+}
+
+.oval {
+    width: 225px;        
+    height: 70px;   
+    background-color: rgb(86, 44, 134); 
+    border-radius: 50%;  
+  position: absolute;
+  z-index: 0;
+  top: 650px;
+  left: 375px;
+  transform: translate(-50%, -50%);
+  
+}
+
+
+#title {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 139, 31);
+}
+
+#jokeText {
+  position: absolute;
+  top: 750px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 139, 31);
 }
